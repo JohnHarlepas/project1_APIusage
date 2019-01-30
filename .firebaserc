@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "acemobile-e8cec",
+    "staging": "acemobile-e8cec",
+    "staging1": "acemobile-e8cec"
+  }
+}
