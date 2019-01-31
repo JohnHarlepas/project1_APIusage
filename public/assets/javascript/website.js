@@ -27,7 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Zim
   // Zim will need to do the following:
+  // * Weather API 
+  // * Schedule with Patrick
   
+
 
 
 
