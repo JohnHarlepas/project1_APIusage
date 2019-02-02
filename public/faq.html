@@ -187,86 +187,6 @@
   </section>
   
 
-
-  
-  <footer>
-      <div class="container">
-        <div class="row">
-        
-                 <div class="col-lg-5 col-md-5 col-sm-4 col-xs-12">
-                     <ul class="adress">
-                          <span>Adress</span>    
-                          <li>
-                             <p>Lorem ipsum dolor sit amet, vero omnis vocibus</p>
-                           </li>
-                                
-                           <li>
-                             <p>+90 1234 56789</p>
-                           </li>
-                                
-                           <li>
-                             <p>info@gmail.com</p>
-                           </li>
-                      </ul>
-                 </div>
-                 
-                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                     <ul class="contact">
-                          <span>Contact</span>    
-                          <li>
-                             <a href="#">Home</a>
-                           </li>
-                                
-                           <li>
-                              <a href="#">About</a>
-                           </li>
-                                
-                           <li>
-                             <a href="#">Blog</a>
-                           </li>
-                                
-                           <li>
-                              <a href="#">Gallery </a>
-                           </li>
-                                
-                           <li>
-                             <a href="#">Contact</a>
-                          </li>
-                     </ul>
-                 </div>
-            
-                 <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-                    <ul class="social">
-                               <span>Social</span>    
-                                <li>
-                                     <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
-                                </li>
-                               
-                                <li>
-                                     <a href="#"><i class="fa fa-github fa-2x"></i></a>
-                                </li>
-                                 
-                                <li>
-                                     <a href="#"><i class="fa fa-linkedin fa-2x"></i></a>
-                                </li>
-                                
-                                <li>
-                                     <a href="#"><i class="fa fa-tumblr fa-2x"></i></a>
-                                </li>
-                                 
-                                <li>
-                                     <a href="#"><i class="fa fa-google-plus fa-2x"></i></a>
-                               </li>
-                               
-                      </ul>
-                 </div>
-            
-            
-            </div> 
-         </div>
-     </footer>
-  
-
   <!-- FOOTER SECTIONS -->
 
   <footer>
@@ -370,39 +290,21 @@
 
   <script>
 
-    $('.nav-tabs a').on('shown.bs.tab', function(event){
-      var x = $(event.target).text();         // active tab
-      var y = $(event.relatedTarget).text();  // previous tab
-      $(".act span").text(x);
-      $(".prev span").text(y);
-    });
+      // Get the current year for the copyright
+      $('#year').text(new Date().getFullYear());
 
-    // Get the current year for the copyright
-    $('#year').text(new Date().getFullYear());
-
-    // Configure Slider
-    $('.carousel').carousel({
-      interval: 6000,
-      pause: 'hover'
-    });
-
-    function openForm() {
-  document.getElementById("myForm").style.display = "block";
+function openForm() {
+document.getElementById("myForm").style.display = "block";
 }
 
 function closeForm() {
-  document.getElementById("myForm").style.display = "none";
+document.getElementById("myForm").style.display = "none";
 }
 
-    // Lightbox Init
-    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-      event.preventDefault();
-      $(this).ekkoLightbox();
-    });
-  // });
 
   </script>
-   <script type="text/javascript" src="tabs.js"></script>
+  <script src="../public/assets/javascript/website.js"></script>
+
 
 </body>
 

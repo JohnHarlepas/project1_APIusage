@@ -351,22 +351,22 @@
 
   <script>
 
-    $('.nav-tabs a').on('shown.bs.tab', function(event){
-      var x = $(event.target).text();         // active tab
-      var y = $(event.relatedTarget).text();  // previous tab
-      $(".act span").text(x);
-      $(".prev span").text(y);
-    });
-  
+    // $('.nav-tabs a').on('shown.bs.tab', function(event){
+    //   var x = $(event.target).text();         // active tab
+    //   var y = $(event.relatedTarget).text();  // previous tab
+    //   $(".act span").text(x);
+    //   $(".prev span").text(y);
+    // });
+
+
+      // Configure Slider
+    // $('.carousel').carousel({
+    //   interval: 6000,
+    //   pause: 'hover'
+    // });
 
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
-
-    // Configure Slider
-    $('.carousel').carousel({
-      interval: 6000,
-      pause: 'hover'
-    });
 
     function openForm() {
   document.getElementById("myForm").style.display = "block";
@@ -377,10 +377,10 @@ function closeForm() {
 }
 
     // Lightbox Init
-    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
-      event.preventDefault();
-      $(this).ekkoLightbox();
-    });
+    // $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+    //   event.preventDefault();
+    //   $(this).ekkoLightbox();
+    // });
   // });
 
   </script>
