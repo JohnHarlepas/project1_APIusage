@@ -1,0 +1,427 @@
+html {
+    height: 100%;
+    /* font-family: 'Nunito', sans-serif; */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* body {
+    background: linear-gradient(to bottom right, #3D4258, #6670A0, #9688B4);
+    line-height: 1.5;
+} */
+
+h1 {
+    /* font-weight: 200; */
+    /* font-size: 3rem; */
+    color: white;
+    /* text-align: center; */
+}
+
+
+.tabs {
+    /* max-width: 600px; */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tab-list {
+    padding-bottom: 1rem;
+}
+
+.tab {
+    /* margin-left: 100px; */
+    margin-left: 50px;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    display: inline-block;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    color: rgba(255, 255, 255, .6);
+    font-weight: 700;
+    background: rgba(10, 20, 30, .2);
+}
+
+.card-text {
+    text: white;
+
+
+}
+
+.tab.active {
+    /* color: white; */
+    color: blue;
+    /* background: rgba(255,255,255,.1); */
+    background-color: #4a5666;
+    border: 1px solid rgba(255, 255, 255, .6);
+}
+
+.tab-content {
+    /* margin-left: 25px; */
+    background: linear-gradient(to bottom right, white, #F8F8F8);
+  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+    display: none;
+    padding: 1.5rem;
+    color: #4a5666;
+}
+
+.show {
+    display: block;
+}
+
+
+body {
+  overflow-x: hidden;
+  font-family: Roboto;
+}
+/* Navbar */
+#navbar {
+  display: flex;
+  /* position: sticky; */
+  top:0;
+  background: #333;
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+.navbar-brand {
+  background: #333;
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  background: #93cb52;
+  border-radius: 5px;
+}
+
+.navbar {
+  background: #333;
+  position: sticky;
+}
+
+.navbar .nav-link {
+  background: #333;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.navbar .nav-item.active {
+  border-left: #444 3px solid;
+}
+
+.carousel-item {
+  height: 450px;
+}
+
+.carousel-image-1 {
+  /* background: url('../img/cardetailing4.jpg'); */
+  background: url('../images/img/cardetailing4.jpg');
+  background-size: cover;
+}
+
+.carousel-image-2 {
+  background: url('../images/img/cardetailing2.jpg');
+  background-size: cover;
+}
+
+.carousel-image-3 {
+  background: url('../images/img/cardetailing4.jpg');
+  background-size: cover;
+}
+
+.card {
+  padding: 10px;
+  margin: 10px;
+  image-rendering: auto
+}
+
+#home-heading {
+  position: relative;
+  min-height: 200px;
+  background: url('../images/img/carimage2.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/*  */
+
+#page-header {
+  height: 200px;
+  background: url('../images/img/cardetailing4.jpg');
+  background: url();
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
+}
+
+.about-img {
+  margin-top: -50px;
+}
+
+#faq .card {
+  border: #444;
+}
+
+#faq a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#faq .card-body,
+#faq .card-header {
+  background: #333;
+}
+
+#main-footer {
+  background: #000;
+  color: #fff;
+}
+footer{
+  background-color: #33383c;
+  padding:70px 0px;
+}	       
+
+footer ul li{
+ padding:5px 0px;
+ text-decoration: none
+}
+
+.adress span , .contact span , .social span, .chat span{
+color: #FFF; 
+font-weight: 800; 
+padding-bottom: 10px; 
+margin-bottom: 20px;
+display: block;
+text-transform: uppercase;
+font-size: 20px;
+letter-spacing: 3px;
+}
+
+.adress li p , .contact li a , .social li a{
+ color:#FFF;
+ letter-spacing: 2px;
+ text-decoration:none;
+ font-size:15px;
+}
+
+.social li{
+ float:left;
+ padding: 5px;
+ list-style: none;
+}
+
+.adress , .contact , .social .chat{
+ list-style: none;
+}
+
+.chat span {
+  opacity: 0;
+}
+
+.fa{
+ /* color:#9c9c9c; */
+ /* margin-right: 15px; */
+ font-size:30px;
+}
+.fa-facebook-square {
+  color: #3b5998;
+}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: 2px solid;
+  cursor: pointer;
+  /* position: fixed; */
+  opacity: 0.8;
+  /* bottom: 23px; */
+  bottom: 5px;
+  /* right: 28px; */
+  width: 80px;
+  transform: rotate(90deg);
+  margin-top: 10px;
+  /* margin-bottom: 100px; */
+  /* margin-left: 500px; */
+  /* position: absolute; */
+  position: fixed;
+  right: 0;
+}
+
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+html {
+    height: 100%;
+    /* font-family: 'Nunito', sans-serif; */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* body {
+    background: linear-gradient(to bottom right, #3D4258, #6670A0, #9688B4);
+    line-height: 1.5;
+} */
+
+h1 {
+    /* font-weight: 200; */
+    /* font-size: 3rem; */
+    color: white;
+    /* text-align: center; */
+}
+
+
+.tabs {
+    /* max-width: 600px; */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tab-list {
+    padding-bottom: 1rem;
+}
+
+.tab {
+    /* margin-left: 100px; */
+    margin-left: 50px;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    display: inline-block;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    color: rgba(255, 255, 255, .6);
+    font-weight: 700;
+    background: rgba(10, 20, 30, .2);
+}
+
+.card-text {
+    text: white;
+
+
+}
+
+.tab.active {
+    /* color: white; */
+    color: blue;
+    /* background: rgba(255,255,255,.1); */
+    background-color: #4a5666;
+    border: 1px solid rgba(255, 255, 255, .6);
+}
+
+.tab-content {
+    /* margin-left: 25px; */
+    background: linear-gradient(to bottom right, white, #F8F8F8);
+  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+    display: none;
+    padding: 1.5rem;
+    color: #4a5666;
+}
+
+.show {
+    display: block;
+}
