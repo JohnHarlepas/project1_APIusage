@@ -63,4 +63,81 @@ function closeForm() {
 
 
 
-  // Zims Code will go here
+  // Zim
+  // Zim will need to do the following:
+  // * Weather API 
+  // * Schedule with Patrick
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // John H.
+
