@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+  crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
   <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
@@ -26,7 +28,7 @@
         integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
 
   <!-- Bootswatch link-->
-  <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/spacelab/bootstrap.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/spacelab/bootstrap.min.css"> -->
 
   <!--Reset css file-->
   <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
@@ -38,7 +40,8 @@
   <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
 
   <!--JQuery link-->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <!--Font Awesome link-->
   <script src="https://use.fontawesome.com/abd289e58f.js"></script>
@@ -59,6 +62,8 @@
         +Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
     crossorigin="anonymous"></script>
 
@@ -70,49 +75,46 @@
   <title>DeTail</title>
 </head>
 
-<body class="bg-light">
+<body>
 
   <!-- Navbar -->
 
-  <nav id="navbar">˘
-    <!-- <h1 class="logo">
-      <span class="text-primary">
-        <i class="fas fa-car"></i> DeTail <br></span>The Leader
-    </h1> -->
+  <nav class="navbar bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#">Navbar</a>
 
-    <nav class="navbar navbar-toggleable-lg navbar-dark bg-dark">
-      <div class="container">
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <a href="index.html" class="navbar-brand">TODAYS WEATHER <br> GOES HERE </a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active col-md-4">
-            <a href="index.html" class="nav-link">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="services.html" class="nav-link">Services</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="about.html" class="nav-link">About Us</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="FAQ.html" class="nav-link">F.A.Q.</a>
-          </li>
-
-          <li class="nav-item ">
-            <a href="contact.html" class="nav-link">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <div class="row text-center">
+            <div id="linkTags" class="col mb-3">
+                <a class="nav-link" href="index.html">Home</a>
+            </div>
+            <div id="linkTags" class="col mb-3">
+                <a class="nav-link" href="services.html">Services</a>
+            </div>
+            <div id="linkTags" class="col mb-3">
+                <a class="nav-link" href="about.html">About</a>
+            </div>
+            <div id="linkTags" class="col mb-3">
+                <a class="nav-link" href="FAQ.html">Facts</a>
+            </div>
+            <div id="linkTags" class="col mb-3">
+                <a class="nav-link" href="contact.html#">Contact</a>
+            </div>
+              
+          </div>
+        </li>
+      </ul>
+    </div>
   </nav>
+ 
 
   <!-- SHOWCASE SLIDER -->
   <section id="showcase">
@@ -167,41 +169,43 @@
   <!-- TABS SECTION -->
 
   <div class="container">
-      <h2 class="text-center">Services</h2>
-      <br>
-      <!-- Nav tabs -->
-      <ul class="nav nav-tabs" role="tablist">
-        <li class="nav-item">
-          <a class="nav-link active" data-toggle="tab" href="#bigDog">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#smallDog">Menu 1</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="tab" href="#cuteDog">Menu 2</a>
-        </li>
-      </ul>
-    
-      <!-- Tab panes -->
-      <div class="tab-content">
-        <div id="bigDog" class="container tab-pane active"><br>
-          <h3>HOME</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        </div>
-        <div id="smallDog" class="container tab-pane fade"><br>
-          <h3>Menu 1</h3>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-        <div id="cuteDog" class="container tab-pane fade"><br>
-          <h3>Menu 2</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-        </div>
+    <h2 class="text-center">Services</h2>
+    <br>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#bigDog">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#smallDog">Menu 1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#cuteDog">Menu 2</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div id="bigDog" class="container tab-pane active"><br>
+        <h3>HOME</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.</p>
+      </div>
+      <div id="smallDog" class="container tab-pane fade"><br>
+        <h3>Menu 1</h3>
+        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      <div id="cuteDog" class="container tab-pane fade"><br>
+        <h3>Menu 2</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+          aperiam.</p>
       </div>
     </div>
-  
+  </div>
 
 
- 
+
+
   <br>
   <br>
 
@@ -479,8 +483,9 @@
 
 
   <script type="text/javascript" src="assets/javascript/website.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 
 </body>
 
