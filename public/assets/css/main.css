@@ -58,11 +58,74 @@ h1 {
     background: rgba(10, 20, 30, .2);
 } */
 
-.card-text {
-    text: white;
 
 
+
+
+/* // this is the 3d flip Box  for yelp review */
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 560px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
 }
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color:#FF4500;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #d2aa00;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* nav bar  */
 
@@ -268,7 +331,7 @@ body {
 .card {
   padding: 10px;
   margin: 10px;
-  image-rendering: auto
+  image-rendering: auto;
 }
 
 #home-heading {
@@ -318,9 +381,44 @@ body {
 #faq .card-body,
 #faq .card-header {
   background: #333;
+  color: white;
+
+}
+
+#footer1 {
+  height: 300px;
+
+}
+
+#footer2 {
+  color: #0888cd;
+
+  
 }
 
 
+
+
+#footerHeader {
+  text-decoration: underline;
+  color: white;
+  
+
+  
+}
+#faqTitle {
+  color: black;
+
+}
+
+
+
+
+#footerTitles1 {
+  color: white;
+
+
+}
 
 #main-footer {
   background: #000;
@@ -329,6 +427,8 @@ body {
 footer{
   background-color: #33383c;
   padding:70px 0px;
+
+
 }	       
 
 footer ul li{
@@ -382,24 +482,24 @@ letter-spacing: 3px;
 
 /* Button used to open the chat form - fixed at the bottom of the page */
 .open-button {
-  background-color: #555;
-  color: white;
-  padding: 16px 20px;
+  background-color: rgb(194, 110, 15);
+  color: rgb(0, 0, 0);
+  /* padding: 16px 20px; */
   border: 2px solid;
   cursor: pointer;
   /* position: fixed; */
   opacity: 0.8;
   /* bottom: 23px; */
-  bottom: 5px;
+  bottom: 300px;
   /* right: 28px; */
-  width: 80px;
+  width: 230px;
   transform: rotate(90deg);
-  margin-top: 10px;
+  /* margin-top: 10px; */
   /* margin-bottom: 100px; */
   /* margin-left: 500px; */
   /* position: absolute; */
   position: fixed;
-  right: 0;
+  right: -99px;
 }
 
 
@@ -499,9 +599,14 @@ html {
 }
 
 .card-text {
-    text: white;
+    color: black;
 
 
+
+}
+
+.card-title {
+  color: black
 }
 
 .tab.active {
@@ -520,4 +625,67 @@ html {
 
 .show {
     display: block;
+}
+
+
+/* Weather widget */
+#widget {
+  background: blue;
+  margin-right: 8em;
+  margin-left: 8em;
+  height: 50px;
+}
+
+.widgetTitles {
+  color: rgb(255, 255, 255);
+
+ 
+  
+}
+
+#widgetTitles1 {
+  background-image: 
+  
+  
+}
+
+#widgetTitles2 {
+ 
+  
+}
+
+#widgetTitles3 {
+  
+  
+}
+
+#widgetTitles4 {
+ 
+  
+}
+
+#widgetTitles5 {
+  
+  
+}
+
+#widgetTitles6 {
+  
+  
+}
+
+
+
+
+#apiNav {
+  text-decoration: underline;
+  
+}
+
+
+
+#brandIcon {
+  height: 50px;
+  width: 50px;
+
 }
