@@ -286,20 +286,33 @@
         </div>
 
         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-            <ul class="chat">
-              <span>Chat</span>
-              <button class="open-button" onclick="openForm()">Chat & Appointments</button>
-              <div class="chat-popup" id="myForm">
-                <form action="/action_page.php" class="form-container">
-                  <h1>Chat</h1>
-                  <label for="msg"><b>Message</b></label>
-                  <textarea placeholder="Type message.." name="msg" required></textarea>
-                  <button type="submit" class="btn">Send</button>
-                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                </form>
-              </div>
-            </ul>
-          </div>
+          <ul class="chat">
+            <span>Chat</span>
+            <button class="open-button" onclick="openForm()">Chat & Appointments</button>
+            <div class="chat-popup" id="myForm" >
+              <form action="/action_page.php" class="form-container">
+                <h5 id="chatHeader">Chat</h5>
+                <label id="name-label">Name</label>
+                <input class="form-control" id="name-input" type="text">
+                <label id="email-label">Email</label>
+                <input class="form-control" id="email-input" type="text">
+                
+                <label for="msg"><b>Message</b></label>
+                <input id="message-input" class="form-control" type="text">
+                
+                <!-- <textarea id="message-input" placeholder="Type message.." name="msg" required></textarea> -->
+                <br>
+                <div class="card1">
+                  <div id=cardBottom class="card-body1">
+                      <div id="displayed-data"></div>
+                  </div>
+                </div>
+                <button id="click-button" type="submit" class="btn">Send</button>
+                <button id="close-button" type="button" class="btn cancel" onclick="closeForm();reset()">Close</button>
+              </form>
+            </div>
+          </ul>
+        </div>
     <!-- <div class="container">
       <div class="row">
         <div class="col-md-3 >
