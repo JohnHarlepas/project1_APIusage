@@ -821,5 +821,10 @@ html {
 
 }
 
-
+#tabPhoto {
+  height: 1000px;
+  width: 100%;
+  align-content: center;
+  
+}
 
