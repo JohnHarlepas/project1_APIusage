@@ -360,14 +360,52 @@ body {
   background: url('../images/img/cardetailing4.jpg');
   background-position: 0 -360px;
   background-attachment: fixed;
+  background-size: cover; /* Patrick added background size: cover;*/
   color: #fff;
   border-bottom: 1px #eee solid;
   padding-top: 50px;
 }
 
+
+
+
 .about-img {
-  margin-top: -50px;
+margin: 100px 0px 0px 0px;
+size: 330px 165px;
 }
+
+#aboutH1 {        /* Patrick added #aboutH1 id */
+color: black;
+}
+
+#iconContainer {    /*P*/
+  text-align: center;
+  margin-left: 250px;
+}
+
+h3 {                /*P*/
+  margin-right: 40px;
+}
+                  
+#kidPic1 {          /*P*/
+  margin-left: 30px;
+}
+
+#kidPic2 {          /*P*/
+  margin-left: 30px;
+}
+
+#article {
+  background-image: url("../images/cleanDirty.png"); /*P*/
+  background-size: cover;
+  
+}
+
+#articleh2 {
+  color: white; /*P*/
+}
+
+
 
 #faq .card {
   border: #444;
