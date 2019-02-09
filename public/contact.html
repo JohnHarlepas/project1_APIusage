@@ -193,7 +193,7 @@
             <div class="card-body">
               <h3 class="text-center">Please fill out this form to contact us</h3>
               <hr>
-              <div class="row">
+              <!-- <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
                     <input type="text" class="form-control" placeholder="First Name">
@@ -214,18 +214,38 @@
                     <input type="text" class="form-control" placeholder="Phone Number">
                   </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
+              </div> -->
+              <!-- <div class="row"> -->
+                <!-- <div class="col-md-12">
                   <div class="form-group">
                     <textarea class="form-control" placeholder="Message"></textarea>
                   </div>
-                </div>
-                <div class="col-md-12">
+                </div> -->
+                <!-- <div class="col-md-12">
                   <div class="form-group">
                     <input type="submit" value="Submit" class="btn btn-outline-danger btn-block">
                   </div>
-                </div>
+                </div> -->
+  <div class="form">
+    <form action="mailto:jfrancisdruhan@gmail.com" method="post" enctype="text/plain">
+      <input type="text" required="" placeholder="Please input your Name" value="" name="name" class="txt">
+      <input type="text" required="" placeholder="Please input your Mobile Number" value="" name="mob" class="txt">
+      <input type="text" required="" placeholder="Please input your Email" value="" name="email" class="txt">
+  
+      <textarea placeholder="Your Message" name="mess" type="text" class="txt_3"></textarea>
+      <div>
+        <hr>
+        Pick Your Detail Date: <input type="date" name="Detail Day">
+        <hr>
+        Select a Time: <input type="time" name="usr_time">
+        <hr>
+        <input type="submit" value="Send" class="btn btn-primary" value="Submit Button">
+        <input type="reset" value="Reset" class="btn btn-warning" value="Submit Button">
+      </div>
+    </form>
+  </div>
+
+
               </div>
             </div>
           </div>
