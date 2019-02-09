@@ -47,7 +47,8 @@
   <script src="https://use.fontawesome.com/abd289e58f.js"></script>
 
   <!--Firebase Javascript link-->
-  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script> -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 
   <!--Add Moment JS-->
   <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
@@ -271,19 +272,19 @@
         <div class="col-md-4">
           <a href="assets/images/placeHolders/560.png" data-toggle="lightbox" data-gallery="img-gallery" data-height="560"
             data-width="560">
-            <img src="assets/images/placeHolders/560.png" alt="" class="img-fluid">
+            <img id="galPic1" src="" alt="" class="img-fluid">
           </a>
         </div>
         <div class="col-md-4">
           <a href="assets/images/placeHolders/560.png" data-toggle="lightbox" data-gallery="img-gallery" data-height="560"
             data-width="560">
-            <img src="assets/images/placeHolders/560.png" alt="" class="img-fluid">
+            <img id="galPic2" src="" alt="" class="img-fluid">
           </a>
         </div>
         <div class="col-md-4">
           <a href="assets/images/placeHolders/560.png" data-toggle="lightbox" data-gallery="img-gallery" data-height="560"
             data-width="560">
-            <img src="assets/images/placeHolders/560.png" alt="" class="img-fluid">
+            <img id="galPic3" src="" alt="" class="img-fluid">
           </a>
         </div>
       </div>
@@ -292,21 +293,21 @@
         <div class="col-md-4">
           <a href="assets/images/placeHolders/560.png" data-toggle="lightbox" data-gallery="img-gallery" data-height="560"
             data-width="560">
-            <img src="assets/images/placeHolders/560.png" alt="" class="img-fluid">
+            <img id="galPic4" src="" alt="" class="img-fluid">
           </a>
         </div>
 
         <div class="col-md-4">
           <a href="assets/images/placeHolders/560.png" data-toggle="lightbox" data-gallery="img-gallery" data-height="560"
             data-width="560">
-            <img src="assets/images/placeHolders/560.png" alt="" class="img-fluid">
+            <img id="galPic5" src="" alt="" class="img-fluid">
           </a>
         </div>
 
         <div class="col-md-4">
           <a href="assets/images/placeHolders/560.png" data-toggle="lightbox" data-gallery="img-gallery" data-height="560"
             data-width="560">
-            <img src="assets/images/placeHolders/560.png" alt="" class="img-fluid">
+            <img id="galPic6" src="" alt="" class="img-fluid">
           </a>
         </div>
       </div>
@@ -331,11 +332,11 @@
             <div class="flip-box-inner">
               <div class="flip-box-front">
                 <div class="card">
-                  <img class="card-img-top" src="assets/images/placeHolders/200.png" alt="Card image cap">
+                  <img id="cardPic1" class="card-img-top" src="" alt="Card image cap">
                   <div class="card-body text-center">
-                    <h5 class="card-title">Testimonial One</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
+                    <h5 id="nameCard1" class="card-title"></h5>
+                    <p id="cardText1" class="card-text"></p>
+                      <img id="cardPic1" class="card-img-bottom" src="assets/images/noaDist.png" alt="Card image cap">
                     
                   </div>
                   <br>
@@ -346,11 +347,11 @@
               </div>
               <div class="flip-box-back">
                 <div class="card">
-                  <img class="card-img-top" src="assets/images/placeHolders/200.png" alt="Card image cap">
+                  <img id="cardPic1a" class="card-img-top" src="" alt="Card image cap">
                   <div class="card-body text-center">
-                    <h5 class="card-title">RATING</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
+                    <h5 class="card-title">RATING:</h5>
+                    <h6 id="rating1" class="card-title"></h6>
+                    <p id="cardText1a" class="card-text">S</p>
                     
                   </div>
                   <br>
@@ -373,11 +374,11 @@
             <div class="flip-box-inner">
               <div class="flip-box-front">
                 <div class="card">
-                  <img class="card-img-top" src="assets/images/placeHolders/200.png" alt="Card image cap">
+                  <img id="cardPic2" class="card-img-top" src="" alt="Card image cap">
                   <div class="card-body text-center">
-                    <h5 class="card-title">Testimonial One</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
+                    <h5 id="nameCard2" class="card-title"></h5>
+                    <p id="cardText2" class="card-text"></p>
+                    <img id="cardPic1" class="card-img-bottom" src="assets/images/halB.png" alt="Card image cap">
                     
                   </div>
                   <br>
@@ -388,11 +389,11 @@
               </div>
               <div class="flip-box-back">
                 <div class="card">
-                  <img class="card-img-top" src="assets/images/placeHolders/200.png" alt="Card image cap">
+                  <img id="cardPic2a" class="card-img-top" src="" alt="Card image cap">
                   <div class="card-body text-center">
-                    <h5 class="card-title">RATING</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
+                    <h5 class="card-title">RATING:</h5>
+                    <h6 id="rating2" class="card-title"></h6>
+                    <p id="cardText2a" class="card-text"></p>
                     
                   </div>
                   <br>
@@ -415,11 +416,11 @@
             <div class="flip-box-inner">
               <div class="flip-box-front">
                 <div class="card">
-                  <img class="card-img-top" src="assets/images/placeHolders/200.png" alt="Card image cap">
+                  <img id="cardPic3" class="card-img-top" src="" alt="Card image cap">
                   <div class="card-body text-center">
-                    <h5 class="card-title">Testimonial One</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
+                    <h5 id="nameCard3" class="card-title"></h5>
+                    <p id="cardText3" class="card-text"></p>
+                    <img id="cardPic1" class="card-img-bottom" src="assets/images/bradB.png" alt="Card image cap">
                     
                   </div>
                   <br>
@@ -430,11 +431,11 @@
               </div>
               <div class="flip-box-back">
                 <div class="card">
-                  <img class="card-img-top" src="assets/images/placeHolders/200.png" alt="Card image cap">
+                  <img id="cardPic3a" class="card-img-top" src="" alt="Card image cap">
                   <div class="card-body text-center">
-                    <h5 class="card-title">RATING</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                      card's content.</p>
+                    <h5 class="card-title">RATING:</h5>
+                    <h6 id="rating3" class="card-title"></h6>
+                    <p id="cardText3a" class="card-text"></p>
                     
                   </div>
                   <br>
@@ -505,7 +506,7 @@
                   <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
                   <br>
                   <br>
-                  <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-4x"></i></a>
+                  <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
                   <br>
                   <br>
                   <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
@@ -525,13 +526,26 @@
             <ul class="chat">
               <span>Chat</span>
               <button class="open-button" onclick="openForm()">Chat & Appointments</button>
-              <div class="chat-popup" id="myForm">
+              <div class="chat-popup" id="myForm" >
                 <form action="/action_page.php" class="form-container">
-                  <h1>Chat</h1>
+                  <h5 id="chatHeader">Chat</h5>
+                  <label id="name-label">Name</label>
+                  <input class="form-control" id="name-input" type="text">
+                  <label id="email-label">Email</label>
+                  <input class="form-control" id="email-input" type="text">
+                  
                   <label for="msg"><b>Message</b></label>
-                  <textarea placeholder="Type message.." name="msg" required></textarea>
-                  <button type="submit" class="btn">Send</button>
-                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                  <input id="message-input" class="form-control" type="text">
+                  
+                  <!-- <textarea id="message-input" placeholder="Type message.." name="msg" required></textarea> -->
+                  <br>
+                  <div class="card1">
+                    <div id=cardBottom class="card-body1">
+                        <div id="displayed-data"></div>
+                    </div>
+                  </div>
+                  <button id="click-button" type="submit" class="btn">Send</button>
+                  <button id="close-button" type="button" class="btn cancel" onclick="closeForm();reset()">Close</button>
                 </form>
               </div>
             </ul>
@@ -581,7 +595,7 @@
               <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
             </li>
             <li>
-              <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-4x"></i></a>
+              <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
             </li>
             <li>
               <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
@@ -673,6 +687,7 @@
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
 
 
 </body>
