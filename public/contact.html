@@ -259,6 +259,44 @@
   </section>
 
 
+  <div class=“form” id=“contact-form”>
+    <form action=“mailto:jfrancisdruhan@gmail.com” method=“post” enctype=“text/plain”>
+      <ul>
+        <li>
+          <label for=“name”>Name</label>
+          <input type=“text” id=“name” name=“name” placeholder=“Please input your Name” required=“required”>
+        </li>
+ 
+        <li>
+          <label for=“phone”>Enter Your Phone Number:</label>
+ 
+          <input type=“tel” id=“phone” name=“phone” pattern=“[0-9]{3}-[0-9]{3}-[0-9]{4}” placeholder=“123-456-7890” required>
+ 
+          <span class=“note”>Format: 123-456-7890</span>
+        </li>
+ 
+        <li>
+          <label for=“email”>Email</label>
+          <input type=“email” id=“email” name=“email” placeholder=“Example@gmail.com” required=“required”>
+        </li>
+        <li>
+          <label for=“message”>Message</label>
+          <textarea placeholder=“Your Message” name=“message” id=“message” required=“required”></textarea>
+        </li>
+ 
+        </ul>
+        <div>
+            <hr>
+            Pick Your Detail Date: <input type=“date” name=“Detail Day”>
+            <hr>
+            Select a Time: <input type=“time” name=“Apointment_Time”>
+            <hr>
+              <input type=“submit” value=“Send” class=“btn btn-primary” value=“Submit Button”>
+              <input type=“reset” value=“Reset” class=“btn btn-warning” value=“Submit Button”>
+        </div>
+      </form>
+    </div>
+
   <!-- FOOTER SECTIONS -->
 
   <footer>
