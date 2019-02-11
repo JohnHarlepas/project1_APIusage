@@ -405,6 +405,38 @@ h3 {                /*P*/
   color: white; /*P*/
 }
 
+@media (max-width: 770px){.col-md-6{
+  margin: inherit;
+  clear: both;
+}}
+
+
+
+@media (max-width: 770px){.about-img{
+  margin: initial;
+  clear: both;
+}}
+
+
+
+@media (max-width: 600px){#iconRow{
+  margin-right: 500px;
+  margin-top: 300px;
+ 
+}}
+
+@media (max-width: 576px) {#kidPic1{
+  float: left;
+  
+}}
+
+
+@media (max-width: 576px) {#kidPic2{
+  float: left;
+  
+}}
+
+
 
 
 #faq .card {
