@@ -569,6 +569,7 @@ var database = firebase.database();
 var name = "";
 var email = "";
 var message = "";
+var moderator = "";
 
 // Click Button changes what is stored in firebase
 $("#click-button").on("click", function (event) {
@@ -579,16 +580,38 @@ $("#click-button").on("click", function (event) {
   name = $("#name-input").val().trim();
   email = $("#email-input").val().trim();
   message = $("#message-input").val().trim();
+  typeQuestion = $("#carsList").val().trim();
 
   // Change what is saved in firebase
   database.ref().push({
     name: name,
     email: email,
     message: message,
+    moderator: typeQuestion,
     dateAdded: firebase.database.ServerValue.TIMESTAMP
   });
 
+
+  	//Remove the text from the form boxes after user presses the add to schedule button.
+  $("#name-input").val("");
+  $("#email-input").val("");
+  $("#message-input").val("");
+  $("#carsList").val("");
+
 });
+
+// Click Button changes what is stored in firebase
+$("#close-button").on("click", function (event) {
+  // Prevent the page from refreshing
+  event.preventDefault();
+
+  	//Remove the text from the form boxes after user presses the add to schedule button.
+  $("#name-input").val("");
+  $("#email-input").val("");
+  $("#message-input").val("");
+
+});
+
 
 
 // // Firebase watcher .on("child_added"
@@ -621,10 +644,12 @@ database.ref().on("child_added", function (childSnapshot) {
 
 
   // full list of items to the well
-  $("#displayed-data").append("<div id='well'><h4 class='member-name'>" +
+  $("#displayed-data").prepend("<div id='well'><h4 class='member-name'>" +
     childSnapshot.val().name + ":" +
     " </h4><p class='member-message'> " + childSnapshot.val().message +
     " </p></div>");
+
+    
 
 
   // Handle the errors
@@ -632,7 +657,41 @@ database.ref().on("child_added", function (childSnapshot) {
   console.log("Errors handled: " + errorObject.code);
 });
 
-var d = $('.card-body1');
-d.scrollTop(d.prop("scrollHeight"));
+
+
+
+
+//allows you to put password on button which then allows you to go to the adminPage
+$("#hidden-button").on("click", function (event) {
+
+  var testV = 1;
+  var pass1 = prompt('Please Enter Your Password',' ');
+  while (testV < 3) {
+  if (!pass1) 
+  history.go(-1);
+  if (pass1.toLowerCase() == "letmein") {
+  alert('You Got it Right!');
+  // this needs to be changed when you put file on github. it needs the web address that will be associated with admin page 
+  window.open('file:///Users/john/Desktop/bootcamp/projects/project1_APIusage/public/adminPage.html');
+  break;
+  } 
+  testV+=1;
+  var pass1 = 
+  prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+  }
+  if (pass1.toLowerCase()!="password" & testV ==3) 
+  history.go(-1);
+  return " ";
+
+
+
+});
+
+
+
+
+
+
+
 
 

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Admin Page</title>
+
+    <!--External css file-->
+    <link rel="stylesheet" type="text/css" href="assets/css/adminStyle.css">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- LINK TO FIREBASE GOES HERE -->
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Jumbotron -->
+        <div class="jumbotron">
+            <h1 class="text-center">Ace Mobile Admin Page</h1>
+        </div>
+
+        <div class="row">
+
+            <!-- Sign-Up Card-->
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+
+                    </div>
+
+                    <div class="card-body">
+
+                        <!-- Sign-up Form (note the various input "types")-->
+                        <form role="form">
+                            <div class="form-group row">
+                                <select id="carsList">
+                                    <option value="Detailer">Detailer</option>
+                                    <option value="Owner">Owner</option>
+                                    <option value="Sales">Sales</option>
+                                    <option value="Tech Support">Tech Support</option>
+                                </select>
+                            </div>
+                            <!-- <div class="form-group row">
+                                <label for="role-input">Company Role:</label>
+                                <input class="form-control" id="role-input" type="text">
+                            </div> -->
+                            <div class="form-group row">
+                                <label for="name-input">Name:</label>
+                                <input class="form-control" id="name-input" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="message-input">Respond to Customer:</label>
+                                <textarea class="form-control" id="message-input" rows="5"></textarea>
+                            </div>
+                            <button class="btn btn-default" id="add-user" type="submit">Submit</button>
+                            <button class="btn btn-default" id="delete-user" type="submit">Delete
+                                Conversations</button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Most Recent Member Card -->
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-header">
+                        Most Recent Message
+                    </div>
+                    <div class="card-body" id="recent-member">
+                        <p id="name-display"></p>
+                        <p id="moderator-display"></p>
+                        <p id="message-display"></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Wells for displaying all users -->
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        Live Conversations
+                    </div>
+                    <div class="card-body">
+                        <div id="full-member-list"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+    <!-- Script -->
+    <script>
+        // ========================================== START CODING BELOW!!
+
+
+
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD6H7VNIiGB9ykCV5qXp5Lts4UdSCpwou4",
+            authDomain: "messagingapp-7b60d.firebaseapp.com",
+            databaseURL: "https://messagingapp-7b60d.firebaseio.com",
+            projectId: "messagingapp-7b60d",
+            storageBucket: "messagingapp-7b60d.appspot.com",
+            messagingSenderId: "83093108806"
+        };
+
+        firebase.initializeApp(config);
+
+        var dataRef = firebase.database();
+
+        // Initial Values
+        var name = "";
+        var message = "";
+        var moderator = "";
+
+        // Capture Button Click
+        $("#add-user").on("click", function (event) {
+            event.preventDefault();
+
+            // YOUR TASK!!!
+            // Code in the logic for storing and retrieving the most recent user.
+            // Don't forget to provide initial data to your Firebase database.
+            name = $("#name-input").val().trim();
+            message = $("#message-input").val().trim();
+            moderator = $("#carsList").val().trim();
+
+            // Code for the push
+            dataRef.ref().push({
+
+                name: name,
+                message: message,
+                moderator: moderator,
+                dateAdded: firebase.database.ServerValue.TIMESTAMP
+            });
+
+            //Remove the text from the form boxes after user presses the add to schedule button.
+            $("#name-input").val("");
+            $("#message-input").val("");
+            $("#carsList").val("");
+        });
+
+
+
+
+        // Firebase watcher + initial loader HINT: This code behaves similarly to .on("value")
+        dataRef.ref().on("child_added", function (childSnapshot) {
+
+            // Log everything that's coming out of snapshot
+            console.log(childSnapshot.val().name);
+            console.log(childSnapshot.val().moderator);
+
+
+            console.log(childSnapshot.val().message);
+
+
+            // full list of items to the well
+            $("#full-member-list").append("<div class='well'><span class='member-name'> " +
+                childSnapshot.val().name +
+                " </span><span class='member-role'> " + "(" + childSnapshot.val().moderator + ")" + ":" +
+                " </span><span class='member-message'> " + childSnapshot.val().message +
+                " </span></div>");
+
+
+
+
+            // Handle the errors
+        }, function (errorObject) {
+            console.log("Errors handled: " + errorObject.code);
+
+
+
+
+        });
+
+        dataRef.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", function (snapshot) {
+            // Change the HTML to reflect
+            $("#name-display").text(snapshot.val().name + " " + ("(" + snapshot.val().moderator + ")" + ":"));
+            $("#message-display").text(snapshot.val().message);
+        });
+
+    </script>
+</body>
+
+</html>
