@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
     integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
@@ -18,8 +18,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-  <link rel="stylesheet" href="../public/assets/css/style.css">
-  <link rel="stylesheet" href="../public/assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
   <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> -->
 
@@ -85,50 +84,54 @@
 
 
 
-  <nav class="navbar">
+  <nav class="navbar ">
 
     <!-- Brand -->
-    <a class="navbar-brand justify-content-text" href="#">
-      <img id="brandIcon" src="../public/assets/images/placeHolders/50.png">
+    <a class="navbar-brand justify-content-text" href="https://github.com/JohnHarlepas/project1_APIusage">
+      <i class="fab fa-github" style="font-size:50px;color: white"></i>
     </a>
 
 
 
+
     <div id="apiNavBar" class="col mb-12">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <div id="widget" class="row text-center">
-              <div id="widgetTitles1" class="col mb-2 widgetTitles">
-                  <i class="	far fa-clock" style="font-size:20px"></i>
-                <p class="timeInput"></p>
-              </div>
-              <div id="widgetTitles2" class="col mb-2 widgetTitles">
-                  <i class="far fa-calendar-alt" style="font-size:20px"></i>
-                <p class="dateInput"></p>
-              </div>
-              <div id="widgetTitles3" class="col mb-2 widgetTitles">
-                  <i class="	fas fa-crosshairs" style="font-size:20px"></i>
-                <p class="cityInput">Fairfax, Virginia</p>
-              </div>
-              <div id="widgetTitles4" class="col mb-2 widgetTitles">
-                  <i class="	fas fa-temperature-low" style="font-size:20px"></i>
-                <p class="cityTemp"></p>
-              </div>
-              <div id="widgetTitles5" class="col mb-2 widgetTitles">
-                  <i class='fas fa-cloud-showers-heavy' style='font-size:20px'></i>
-                <p class="probRain"></p>
-              </div>
-  
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <div id="widget" class="row text-center">
+            <div id="widgetTitles1" class="col mb-2 widgetTitles">
+              <i class="	far fa-clock" style="font-size:20px"></i>
+              <p class="timeInput"></p>
             </div>
-          </li>
-        </ul>
-  
-  
-      </div>
+            <div id="widgetTitles2" class="col mb-2 widgetTitles">
+              <i class="far fa-calendar-alt" style="font-size:20px"></i>
+              <p class="dateInput"></p>
+            </div>
+            <div id="widgetTitles3" class="col mb-2 widgetTitles">
+              <i class="	fas fa-crosshairs" style="font-size:20px"></i>
+              <p class="cityInput">Fairfax, Virginia</p>
+            </div>
+            <div id="widgetTitles4" class="col mb-2 widgetTitles">
+              <i class="	fas fa-temperature-low" style="font-size:20px"></i>
+              <p class="cityTemp"></p>
+            </div>
+            <div id="widgetTitles5" class="col mb-2 widgetTitles">
+              <i class='fas fa-cloud-showers-heavy' style='font-size:20px'></i>
+              <p class="probRain"></p>
+            </div>
+
+          </div>
+        </li>
+      </ul>
+
+
+    </div>
+
+
+
 
     <!-- Toggler/collapsibe Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-        <i class="fa fa-align-justify" style="font-size:30px;color: white"></i>
+      <i class="fa fa-align-justify" style="font-size:30px;color: white"></i>
     </button>
 
     <!-- Navbar links -->
@@ -146,7 +149,7 @@
               <a class="nav-link" href="about.html">About</a>
             </div>
             <div id="linkTags" class="col mb-3">
-              <a class="nav-link" href="FAQ.html">Facts</a>
+              <a class="nav-link" href="faq.html">Facts</a>
             </div>
             <div id="linkTags" class="col mb-3">
               <a class="nav-link" href="contact.html#">Contact</a>
@@ -159,143 +162,76 @@
   </nav>
 
 
+  <!----------------P Section---------------->
+
   <!-- PAGE HEADER -->
   <header id="page-header">
     <div class="container">
       <div class="row">
         <div class="col-md-6 m-auto text-center">
-          <h1 id="sectionTitles">Contact Us</h1>
+          <h1 id="sectionTitles">About Us</h1>
+          </h4>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- CONTACT SECTION -->
-  <section id="contact" class="py-3">
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-3">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
-          <div class="card p-4">
-            <div class="card-body">
-              <h4>Get In Touch</h4>
-              <p>We are always willing to listen to our customers. Communication is a skill we stress at Ace Mobile Detailing. Please, email us with your thoughts and/or questions.</p>
-              <h4>Address</h4>
-              <p>Fairfax, VA 22033</p>
-              <h4>Email</h4>
-              <p>
-                  <a href="mailto:service@acemobiledetail.com" target="_self" data-content="service@acemobiledetail.com" data-type="mail">service@acemobiledetail.com</a>
-              </p>
-              <h4>Phone</h4>
-              <p>(703) 343-5336</p>
-            </div>
-          </div>
+        <div class="col-md-6">
+          <h1 id="aboutH1">How We Started</h1>
+          <p>I started my business in 2006 after spending many years in the industry as a detailer at area shops. I was
+            able to see that there was a mobile need for high quality detailing. After many years of research and
+            training we started serving our customers. I made it my mission to provide customers with a top notch
+            service. This included providing my service mobile at my customers location to aid in their schedule. I also
+            have always made sure to properly stay trained with the most up to date techniques, equipment and products.
+          </p>
+          <p>I made it my mission that as I expanded my employees would have this same mission and passion as I have so
+            that we could remain Northern Virginia’s best auto detailing company. We have known many of our customers
+            for over 10 years and continue to be referred by our customers. We are a family run company and our proud to
+            be a small and local business. We hope that you feel welcomed and valued as our customer and we look forward
+            to serving you for all of your auto detailing needs and make it the best possible service experience. Please
+            explore our website to see the many different services we offer, proper ways to detail, proper ways to care
+            for your auto, and our before and after pictures of some of our work.</p>
         </div>
-        <div class="col-md-8">
-          <div class="card p-4">
-            <div class="card-body">
-              <h3 class="text-center">Please fill out this form to contact us</h3>
-              <hr>
-              <!-- <div class="row">
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="First Name">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Last Name">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Email">
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Phone Number">
-                  </div>
-                </div>
-              </div> -->
-              <!-- <div class="row"> -->
-              <!-- <div class="col-md-12">
-                  <div class="form-group">
-                    <textarea class="form-control" placeholder="Message"></textarea>
-                  </div>
-                </div> -->
-              <!-- <div class="col-md-12">
-                  <div class="form-group">
-                    <input type="submit" value="Submit" class="btn btn-outline-danger btn-block">
-                  </div>
-                </div> -->
-              <div class="form">
-                <form action="mailto:jfrancisdruhan@gmail.com" method="post" enctype="text/plain">
-                  <input type="text" required="" placeholder="Please input your Name" value="" name="name" class="txt">
-                  <input type="text" required="" placeholder="Please input your Mobile Number" value="" name="mob"
-                    class="txt">
-                  <input type="text" required="" placeholder="Please input your Email" value="" name="email"
-                    class="txt">
-
-                  <textarea placeholder="Your Message" name="mess" type="text" class="txt_3"></textarea>
-                  <div>
-                    <hr>
-                    Pick Your Detail Date: <input type="date" name="Detail Day">
-                    <hr>
-                    Select a Time: <input type="time" name="usr_time">
-                    <hr>
-                    <input type="submit" value="Send" class="btn btn-primary" value="Submit Button">
-                    <input type="submit" value="Reset" id="contactReset" value="Reset Button" onclick="reset()">
-                  </div>
-                </form>
-              </div>
-
-
-            </div>
-          </div>
+        <div class="col-md-6">
+          <img src="assets/images/detailingPic.jpg" alt="detailing pic"
+            class="img-fluid rounded-circle d-none d-md-block about-img">
         </div>
       </div>
     </div>
-    </div>
   </section>
 
+  <!-- ICON BOXES -->
+  <section id="icon-boxes" class="p-5">
+    <div class="container" id="iconContainer">
+      <div class="row mb-6">
+        <div class="col-md-5">
+          <div class="card bg-danger text-white text-center">
+            <div class="card-body">
 
-  <div class=“form” id=“contact-form”>
-    <form action=“mailto:jfrancisdruhan@gmail.com” method=“post” enctype=“text/plain”>
-      <ul>
-        <li>
-          <label for=“name”>Name</label>
-          <input type=“text” id=“name” name=“name” placeholder=“Please input your Name” required=“required”>
-        </li>
- 
-        <li>
-          <label for=“phone”>Enter Your Phone Number:</label>
- 
-          <input type=“tel” id=“phone” name=“phone” pattern=“[0-9]{3}-[0-9]{3}-[0-9]{4}” placeholder=“123-456-7890” required>
- 
-          <span class=“note”>Format: 123-456-7890</span>
-        </li>
- 
-        <li>
-          <label for=“email”>Email</label>
-          <input type=“email” id=“email” name=“email” placeholder=“Example@gmail.com” required=“required”>
-        </li>
-        <li>
-          <label for=“message”>Message</label>
-          <textarea placeholder=“Your Message” name=“message” id=“message” required=“required”></textarea>
-        </li>
- 
-        </ul>
-        <div>
-            <hr>
-            Pick Your Detail Date: <input type=“date” name=“Detail Day”>
-            <hr>
-            Select a Time: <input type=“time” name=“Apointment_Time”>
-            <hr>
-              <input type=“submit” value=“Send” class=“btn btn-primary” value=“Submit Button”>
-              <input type=“reset” value=“Reset” class=“btn btn-warning” value=“Submit Button”>
+              <h3>Future Staff</h3>
+
+              <img class="rounded float-left" id="kidPic1" src="assets/images/kid1.png">
+            </div>
+          </div>
         </div>
-      </form>
-    </div>
+        <div class="col-md-5">
+          <div class="card bg-dark text-white text-center">
+            <div class="card-body">
+
+              <h3>Future Staff</h3>
+              <img class="rounded float-left" id="kidPic2" src="assets/images/kid2.png">
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+
+  <!----------------P Section---------------->
 
   <!-- FOOTER SECTIONS -->
 
@@ -308,24 +244,25 @@
               <h4 id="footerHeader">Contact Info</h4>
               <br>
               <div id="footer2">
-                  <p>Fairfax, VA 22033</p>
-                  <p>
-                      <a href="mailto:service@acemobiledetail.com" target="_self" data-content="service@acemobiledetail.com" data-type="mail">service@acemobiledetail.com</a>
-                  </p>
-                  <p>(703) 343-5336</p>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <a id="hiddenPage" href="adminPage.html" class="nav-link">adminPage</a>
-                </div>
+                <p>Fairfax, VA 22033</p>
+                <p>
+                  <a href="mailto:service@acemobiledetail.com" target="_self" data-content="service@acemobiledetail.com"
+                    data-type="mail">service@acemobiledetail.com</a>
+                </p>
+                <p>(703) 343-5336</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a id="hiddenPage" href="adminPage.html" class="nav-link">adminPage</a>
+              </div>
 
 
             </div>
@@ -470,6 +407,7 @@
       </div>
     </div> -->
   </footer>
+
   <!-- FOOTER COPYRIGHT -->
   <footer id="main-footer" class="text-center p-4">
     <div class="container">
@@ -496,7 +434,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
   <script>
-
     // Get the current year for the copyright
     $('#year').text(new Date().getFullYear());
 
@@ -511,9 +448,11 @@
   </script>
   <script type="text/javascript" src="assets/javascript/website.js"></script>
   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script> -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+
 
 </body>
 
