@@ -1,0 +1,928 @@
+html {
+    height: 100%;
+    /* font-family: 'Nunito', sans-serif; */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* body {
+    background: linear-gradient(to bottom right, #3D4258, #6670A0, #9688B4);
+    line-height: 1.5;
+} */
+
+h1 {
+    /* font-weight: 200; */
+    /* font-size: 3rem; */
+    color: white;
+    /* text-align: center; */
+}
+
+.display-3 {
+  color: white;
+  text-shadow: 2px 2px #FF0000;
+  text-align: center;
+
+
+
+}
+
+/* testimonial section */
+#steps {
+    text-decoration: underline;
+}
+
+.images11 {
+    width: 200px;
+    height: 200px;
+}
+
+/* .tabs {
+    max-width: 600px;
+    max-width: 1000px;
+    margin: 0 auto;
+} */
+
+/* .tab-list {
+    padding-bottom: 1rem;
+} */
+
+/* .tab {
+    margin-left: 100px;
+    margin-left: 50px;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    display: inline-block;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    color: rgba(255, 255, 255, .6);
+    font-weight: 700;
+    background: rgba(10, 20, 30, .2);
+} */
+
+
+
+
+
+/* // this is the 3d flip Box  for yelp review */
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 560px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color:#FF4500;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: #d2aa00;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* nav bar  */
+
+/* Icon 1 */
+
+/* .animated-icon1 {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  margin: 0px;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  } */
+/*   
+  .animated-icon1 span{
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+  } */
+  
+  /* .animated-icon1 span {
+  background: #e65100;
+  }
+  
+  
+  .animated-icon1 span:nth-child(1) {
+  top: 0px;
+  }
+  
+  .animated-icon1 span:nth-child(2) {
+  top: 10px;
+  }
+  
+  .animated-icon1 span:nth-child(3) {
+  top: 20px;
+  }
+  
+  .animated-icon1.open span:nth-child(1) {
+  top: 11px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+  }
+  
+  .animated-icon1.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+  }
+  
+  .animated-icon1.open span:nth-child(3) {
+  top: 11px;
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  } */
+
+
+
+
+
+/* 
+.tab-content {
+    margin-left: 25px;
+    background: linear-gradient(to bottom right, white, #F8F8F8);
+  box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+    display: none;
+    padding: 1.5rem;
+    color: #4a5666;
+} */
+
+.show {
+    display: block;
+}
+
+
+body {
+  overflow-x: hidden;
+  font-family: Roboto;
+}
+/* Navbar */
+#navbar {
+  /* display: flex; */
+  position: fixed;
+  top:0;
+  background: #333;
+  color: rgb(14, 13, 13);
+  /* justify-content: space-between; */
+  z-index: 1;
+  padding: 1rem;
+}
+
+#hiddenPage {
+  color: black;
+  text-align: left;
+
+
+
+}
+
+#contactReset {
+  background: red;
+  
+}
+
+
+.navbar-toggle-icon  {
+
+
+}
+
+
+.navbar-brand {
+  background: #333; 
+
+
+} 
+
+
+
+ @media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* //hides the api nav bar when it gets smaller than 1154 */
+@media screen and (max-width: 1154px) {
+  #apiNavBar {
+    visibility: hidden;
+  }
+
+}
+
+.nav-item {
+  background: 333;
+
+}
+
+
+
+/* #navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+} */
+
+/* #navbar ul li a {
+  color: #fff;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+} */
+
+#linkTags a:hover {
+  color: red;
+
+}
+
+
+.navbar {
+  background: #333;
+  position: sticky;
+}
+
+.nav-link {
+  font-size: 14px;
+  color: orange;
+  text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.navbar .nav-item.active {
+  border-left: rgb(194, 117, 17) 3px solid;
+}
+
+
+#sectionTitles {
+  color: rgb(197, 171, 21);
+  text-shadow: 2px 2px #ff0000;
+}
+
+
+.carousel-item {
+  height: 450px;
+}
+
+.carousel-image-1 {
+  /* background: url('../img/cardetailing4.jpg'); */
+  background: url('../images/img/cardetailing4.png');
+  background-size: cover;
+}
+
+.carousel-image-2 {
+  background: url('../images/img/cardetailing2.jpg');
+  background-size: cover;
+}
+
+.carousel-image-3 {
+  background: url('../images/cardetailing5.jpg');
+  background-size: cover;
+}
+
+.card {
+  padding: 10px;
+  margin: 10px;
+  image-rendering: auto;
+}
+
+#home-heading {
+  position: relative;
+  min-height: 200px;
+  background: url('../images/img/carimage2.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #fff;
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/*  */
+
+#page-header {
+  height: 200px;
+  background: url('../images/img/cardetailing4.jpg');
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  background-size: cover; /* Patrick added background size: cover;*/
+  color: #fff;
+  border-bottom: 1px #eee solid;
+  padding-top: 50px;
+}
+
+
+
+
+.about-img {
+margin: 100px 0px 0px 0px;
+size: 330px 165px;
+}
+
+#aboutH1 {        /* Patrick added #aboutH1 id */
+color: black;
+}
+
+#iconContainer {    /*P*/
+  text-align: center;
+  margin-left: 250px;
+}
+
+h3 {                /*P*/
+  margin-right: 40px;
+}
+                  
+#kidPic1 {          /*P*/
+  margin-left: 30px;
+}
+
+#kidPic2 {          /*P*/
+  margin-left: 30px;
+}
+
+#article {
+  background-image: url("../images/cleanDirty.png"); /*P*/
+  background-size: cover;
+  
+}
+
+#articleh2 {
+  color: white; /*P*/
+}
+
+
+
+#faq .card {
+  border: #444;
+}
+
+#faq a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#faq .card-body,
+#faq .card-header {
+  background: #333;
+  color: white;
+
+}
+
+.card-body1 {
+  background-color: lightblue;
+  width: 280px;
+  height: 150px;
+  overflow: auto;
+  text-align: center;
+
+
+
+}
+
+.member-name {
+  text-decoration: underline;
+  height: 20px;
+}
+
+.member-name {
+  text-decoration: underline;
+  height: 17px;
+}
+
+
+
+
+#footer1 {
+  height: 300px;
+
+}
+
+#footer2 {
+  color: #0888cd;
+
+  
+}
+
+
+
+
+#footerHeader {
+  text-decoration: underline;
+  color: white;
+  
+
+  
+}
+#faqTitle {
+  color: black;
+
+}
+
+
+
+
+#footerTitles1 {
+  color: white;
+
+
+}
+
+#main-footer {
+  background: #000;
+  color: #fff;
+}
+footer{
+  background-color: #33383c;
+  padding:70px 0px;
+
+
+}	       
+
+footer ul li{
+ padding:5px 0px;
+ text-decoration: none
+}
+
+.adress span , .contact span , .social span, .chat span{
+color: #FFF; 
+font-weight: 800; 
+padding-bottom: 10px; 
+margin-bottom: 20px;
+display: block;
+text-transform: uppercase;
+font-size: 20px;
+letter-spacing: 3px;
+}
+
+.adress li p , .contact li a , .social li a{
+ color:#FFF;
+ letter-spacing: 2px;
+ text-decoration:none;
+ font-size:15px;
+}
+
+.social li{
+ float:left;
+ padding: 5px;
+ list-style: none;
+}
+
+.adress , .contact , .social .chat{
+ list-style: none;
+}
+
+.chat span {
+  opacity: 0;
+}
+
+.fa{
+ /* color:#9c9c9c; */
+ /* margin-right: 15px; */
+ font-size:30px;
+}
+/* .fa-facebook-square {
+  color: #3b5998;
+} */
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: rgb(194, 110, 15);
+  color: rgb(0, 0, 0);
+  /* padding: 16px 20px; */
+  border: 2px solid;
+  cursor: pointer;
+  /* position: fixed; */
+  opacity: 0.8;
+  /* bottom: 23px; */
+  bottom: 300px;
+  /* right: 28px; */
+  width: 230px;
+  transform: rotate(90deg);
+  /* margin-top: 10px; */
+  /* margin-bottom: 100px; */
+  /* margin-left: 500px; */
+  /* position: absolute; */
+  position: fixed;
+  right: -99px;
+}
+
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  background: orange;
+  
+
+}
+
+/* Add styles to the form container */
+.form-container {
+  min-width: 300px;
+  padding: 10px;
+  background-color: orange;
+}
+
+#name-here {
+  text-decoration: underline;
+}
+
+#chatHeader {
+  text-align: center;
+
+}
+
+.well {
+  height: 50px;
+  width: 100%;
+  color: black;
+  font-size: 16px;
+  align-content: left;
+
+
+
+}
+
+.customer-name,
+ .customer-message {
+  color: black;
+  font-size: 16px;
+  width: 100%;
+  height: 25px;
+
+
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 40px;
+
+}
+
+#displayed-data {
+  height: 150px;
+  width: 280px;
+  color: black;
+
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+#testBut {
+  display: flex;
+  justify-content: center;
+}
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+html {
+    height: 100%;
+    /* font-family: 'Nunito', sans-serif; */
+    -webkit-font-smoothing: antialiased;
+}
+
+/* body {
+    background: linear-gradient(to bottom right, #3D4258, #6670A0, #9688B4);
+    line-height: 1.5;
+} */
+
+
+
+.tabs {
+    /* max-width: 600px; */
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tab-list {
+    padding-bottom: 1rem;
+}
+
+.tab {
+    /* margin-left: 100px; */
+    margin-left: 50px;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    display: inline-block;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    color: rgba(255, 255, 255, .6);
+    font-weight: 700;
+    background: rgba(10, 20, 30, .2);
+}
+
+.card-text {
+    color: black;
+    font-size: 15px;
+
+
+
+}
+
+#cardText1a, 
+ #cardText2a,
+   #cardText3a {
+     font-size: 15px;
+
+   }
+
+
+.card-img-top {
+  height: 250px;
+  width: 250px;
+  align-content: center;
+}
+
+.card-img-bottom {
+  height: 150px;
+  width: 245px;
+  align-content: center;
+}
+
+
+
+.img-fluid {
+  height: 400px;
+  width: 400px; 
+}
+
+.card-title {
+  color: black
+}
+
+.tab.active {
+    /* color: white; */
+    color: blue;
+    /* background: rgba(255,255,255,.1); */
+    background-color: #4a5666;
+    border: 1px solid rgba(255, 255, 255, .6);
+}
+
+.tab-content {
+    background: linear-gradient(to bottom right, white, #F8F8F8);
+    box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+    color: #0e4388;
+}
+
+.show {
+    display: block;
+}
+
+
+/* Weather widget */
+#widget {
+  background: 333;
+  margin-right: 8em;
+  margin-left: 8em;
+  height: 50px;
+}
+
+.widgetTitles {
+  color: rgb(255, 255, 255);
+
+ 
+  
+}
+
+#widgetTitles1 {
+  background-image: 
+  
+  
+}
+
+#widgetTitles2 {
+ 
+  
+}
+
+#widgetTitles3 {
+  
+  
+}
+
+#widgetTitles4 {
+ 
+  
+}
+
+#widgetTitles5 {
+  
+  
+}
+
+#widgetTitles6 {
+  
+  
+}
+
+
+
+
+#apiNav {
+  text-decoration: underline;
+  
+}
+
+
+
+#brandIcon {
+  height: 50px;
+  width: 50px;
+
+}
+
+#tabPhoto {
+  height: 1000px;
+  width: 100%;
+  align-content: center;
+
+}
+
+/* CONTACT form */
+  
+ 
+
+
+  /* TABS CSS */
+
+  #johnPicTab {
+  width: 80%;
+  height: 400px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/* #johnTabGroup1 {
+  align-items: center;
+
+} */
+
+#johnTabText1 {
+  text-align: center;
+}
+
+#johnTabButton1 {
+  display: flex;
+  justify-content: center;
+}
+
+#hidden-button {
+  background: black;
+}
+
+
+
+
+/* CONTACT form */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
