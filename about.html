@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+      crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> -->
+
+
+
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 
+          integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> -->
+
+  <!-- Bootswatch link-->
+  <!-- <link rel="stylesheet" type="text/css" href="https://bootswatch.com/4/spacelab/bootstrap.min.css"> -->
+
+  <!--Reset css file-->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+
+  <!--Google Fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+  <!--External css file-->
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
+
+  <!--JQuery link-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!--Font Awesome link-->
+  <script src="https://use.fontawesome.com/abd289e58f.js"></script>
+
+  <!--Firebase Javascript link-->
+  <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+
+  <!--Add Moment JS-->
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+  <!--Bootstrap Javascript links (required for modals to work)-->
+
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B
+          +Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"
+    integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+    crossorigin="anonymous"></script>
+
+  <!--Firebase UI JS and CSS for authentication-->
+  <script src="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.js"></script>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/2.5.1/firebaseui.css" />
+  <title>DeTail</title>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <!-- Navbar -->
+
+  <!-- Navbar -->
+
+
+
+
+  <nav class="navbar ">
+
+    <!-- Brand -->
+    <a class="navbar-brand justify-content-text" href="https://github.com/JohnHarlepas/project1_APIusage">
+      <i class="fab fa-github" style="font-size:50px;color: white"></i>
+    </a>
+
+
+
+
+    <div id="apiNavBar" class="col mb-12">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <div id="widget" class="row text-center">
+            <div id="widgetTitles1" class="col mb-2 widgetTitles">
+              <i class="	far fa-clock" style="font-size:20px"></i>
+              <p class="timeInput"></p>
+            </div>
+            <div id="widgetTitles2" class="col mb-2 widgetTitles">
+              <i class="far fa-calendar-alt" style="font-size:20px"></i>
+              <p class="dateInput"></p>
+            </div>
+            <div id="widgetTitles3" class="col mb-2 widgetTitles">
+              <i class="	fas fa-crosshairs" style="font-size:20px"></i>
+              <p class="cityInput">Fairfax, Virginia</p>
+            </div>
+            <div id="widgetTitles4" class="col mb-2 widgetTitles">
+              <i class="	fas fa-temperature-low" style="font-size:20px"></i>
+              <p class="cityTemp"></p>
+            </div>
+            <div id="widgetTitles5" class="col mb-2 widgetTitles">
+              <i class='fas fa-cloud-showers-heavy' style='font-size:20px'></i>
+              <p class="probRain"></p>
+            </div>
+
+          </div>
+        </li>
+      </ul>
+
+
+    </div>
+
+
+
+
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <i class="fa fa-align-justify" style="font-size:30px;color: white"></i>
+    </button>
+
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <div class="row text-center">
+            <div id="linkTags" class="col mb-3">
+              <a class="nav-link" href="index.html">Home</a>
+            </div>
+            <div id="linkTags" class="col mb-3">
+              <a class="nav-link" href="services.html">Services</a>
+            </div>
+            <div id="linkTags" class="col mb-3">
+              <a class="nav-link" href="about.html">About</a>
+            </div>
+            <div id="linkTags" class="col mb-3">
+              <a class="nav-link" href="faq.html">Facts</a>
+            </div>
+            <div id="linkTags" class="col mb-3">
+              <a class="nav-link" href="contact.html#">Contact</a>
+            </div>
+
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!----------------P Section---------------->
+
+  <!-- PAGE HEADER -->
+  <header id="page-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 m-auto text-center">
+          <h1 id="sectionTitles">About Us</h1>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 id="aboutH1">How We Started</h1>
+          <p>I started my business in 2006 after spending many years in the industry as a detailer at area shops. I was
+            able to see that there was a mobile need for high quality detailing. After many years of research and
+            training we started serving our customers. I made it my mission to provide customers with a top notch
+            service. This included providing my service mobile at my customers location to aid in their schedule. I also
+            have always made sure to properly stay trained with the most up to date techniques, equipment and products.
+          </p>
+          <p>I made it my mission that as I expanded my employees would have this same mission and passion as I have so
+            that we could remain Northern Virginia’s best auto detailing company. We have known many of our customers
+            for over 10 years and continue to be referred by our customers. We are a family run company and our proud to
+            be a small and local business. We hope that you feel welcomed and valued as our customer and we look forward
+            to serving you for all of your auto detailing needs and make it the best possible service experience. Please
+            explore our website to see the many different services we offer, proper ways to detail, proper ways to care
+            for your auto, and our before and after pictures of some of our work.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="assets/images/detailingPic.jpg" alt="detailing pic"
+            class="img-fluid rounded-circle d-none d-md-block about-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ICON BOXES -->
+  <section id="icon-boxes" class="p-5">
+    <div class="container" id="iconContainer">
+      <div class="row mb-6">
+        <div class="col-md-5">
+          <div class="card bg-danger text-white text-center">
+            <div class="card-body">
+
+              <h3>Future Staff</h3>
+
+              <img class="rounded float-left" id="kidPic1" src="assets/images/kid1.png">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card bg-dark text-white text-center">
+            <div class="card-body">
+
+              <h3>Future Staff</h3>
+              <img class="rounded float-left" id="kidPic2" src="assets/images/kid2.png">
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </section>
+
+  <!----------------P Section---------------->
+
+  <!-- FOOTER SECTIONS -->
+
+  <footer>
+    <div class="col mb-12">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <div id="footer1" class="row text-center">
+            <div class="col mb-3">
+              <h4 id="footerHeader">Contact Info</h4>
+              <br>
+              <div id="footer2">
+                <p>Fairfax, VA 22033</p>
+                <p>
+                  <a href="mailto:service@acemobiledetail.com" target="_self" data-content="service@acemobiledetail.com"
+                    data-type="mail">service@acemobiledetail.com</a>
+                </p>
+                <p>(703) 343-5336</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a id="hiddenPage" href="adminPage.html" class="nav-link">adminPage</a>
+              </div>
+
+
+            </div>
+            <div id="widgetTitles2" class="col mb-3 widgetTitles">
+              <h4 id="footerHeader">Index</h4>
+              <br>
+              <a href="index.html" class="nav-link">Home</a>
+              <a href="services.html" class="nav-link">Services</a>
+              <a href="about.html" class="nav-link">About Us</a>
+              <a href="FAQ.html" class="nav-link">F.A.Q.</a>
+              <a href="contact.html" class="nav-link">Contact Us</a>
+            </div>
+            <div id="widgetTitles3" class="col mb-3 widgetTitles">
+              <h4 id="footerHeader">Social Media</h4>
+              <br>
+              <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official fa-2x"
+                  aria-hidden="true"></i></a>
+              <br>
+              <br>
+              <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+              <br>
+              <br>
+              <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+              <br>
+              <br>
+              <a href="https://www.snapchat.com/" target="_blank"><i class="fa fa-snapchat fa-2x"></i></a>
+            </div>
+
+          </div>
+        </li>
+      </ul>
+
+
+    </div>
+
+    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+      <ul class="chat">
+        <span>Chat</span>
+        <button class="open-button" onclick="openForm()">Chat & Appointments</button>
+        <div class="chat-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h5 id="chatHeader">Chat</h5>
+            <select id="carsList">
+              <option value="Appointment">Appointment</option>
+              <option value="Refunds">Refunds</option>
+              <option value="Website Problems">Website Problems</option>
+              <option value="General Questions">General Questions</option>
+            </select>
+            <label id="name-label">Name</label>
+            <input class="form-control" id="name-input" type="text">
+            <label id="email-label">Email</label>
+            <input class="form-control" id="email-input" type="text">
+
+            <label for="msg">Message</label>
+            <input id="message-input" class="form-control" type="text">
+
+            <!-- <textarea id="message-input" placeholder="Type message.." name="msg" required></textarea> -->
+            <br>
+            <div class="card1">
+              <div id=cardBottom class="card-body1">
+                <div id="displayed-data"></div>
+              </div>
+            </div>
+            <br>
+            <button id="click-button" type="submit" class="btn">Send</button>
+            <button id="close-button" type="button" class="btn cancel" onclick="closeForm();reset()">Close</button>
+          </form>
+        </div>
+      </ul>
+    </div>
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col-md-3 >
+          <ul class="adress">
+            <span>Address</span>
+            <li>
+              <p>Lorem ipsum dolor sit amet, vero omnis vocibus</p>
+            </li>
+            <li>
+              <p>(703) 555-1234</p>
+            </li>
+            <li>
+              <p>info@gmail.com</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <ul class="contact">
+            <span>Contact</span>
+            <li>
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li>
+              <a href="services.html" class="nav-link">Services</a>
+            </li>
+            <li>
+              <a href="about.html" class="nav-link">About Us</a>
+            </li>
+            <li>
+              <a href="FAQ.html" class="nav-link">F.A.Q.</a>
+            </li>
+            <li>
+              <a href="contact.html" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <ul class="social">
+            <span>Social</span>
+            <li>
+              <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+            </li>
+            <li>
+              <a href="https://www.snapchat.com/" target="_blank"><i class="fa fa-snapchat fa-2x"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+          <ul class="chat">
+            <span>Chat</span>
+            <button class="open-button" onclick="openForm()">Chat & Appointments</button>
+            <div class="chat-popup" id="myForm">
+              <form action="/action_page.php" class="form-container">
+                <h1>Chat</h1>
+                <label for="msg"><b>Message</b></label>
+                <textarea placeholder="Type message.." name="msg" required></textarea>
+                <button type="submit" class="btn">Send</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              </form>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div> -->
+  </footer>
+
+  <!-- FOOTER COPYRIGHT -->
+  <footer id="main-footer" class="text-center p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>Copyright &copy;
+            <span id="year"></span> DeTail</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+  <script>
+    // Get the current year for the copyright
+    $('#year').text(new Date().getFullYear());
+
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
+
+  </script>
+  <script type="text/javascript" src="assets/javascript/website.js"></script>
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+
+
+</body>
+
+</html>
