@@ -61,8 +61,7 @@
                                 <textarea class="form-control" id="message-input" rows="5"></textarea>
                             </div>
                             <button class="btn btn-default" id="add-user" type="submit">Submit</button>
-                            <button class="btn btn-default" id="delete-user" type="submit">Delete
-                                Conversations</button>
+                            
 
                         </form>
 
@@ -91,6 +90,8 @@
                     <div class="card-header">
                         Live Conversations
                     </div>
+                    <button class="btn btn-danger" id="delete-user" type="submit">Delete All
+                        Conversations</button>
                     <div class="card-body">
                         <div id="full-member-list"></div>
                     </div>
@@ -191,6 +192,42 @@
             // Change the HTML to reflect
             $("#name-display").text(snapshot.val().name + " " + ("(" + snapshot.val().moderator + ")" + ":"));
             $("#message-display").text(snapshot.val().message);
+        });
+
+        //Click event for red "delete all conversations" button. When user clicks on button, all conversations are deleted from page and database
+        $("body").on("click", "#delete-user", function () {
+            // Prevent form from submitting
+            event.preventDefault();
+
+            //confirm with the user before he or she decides to actually delete the train data.
+            var accptDel = confirm("Deleting permanently removes all conversations from system. Are you sure you want to delete?");
+            //To do: Replace alert with modal... Confirmation modal that appears when user wants to remove train from schedule.
+            //$(".remove-train-modal").html("<p>" + " Deleting a train permanently removes the train from the system. Are you sure you want to delete this train?" + "</p>");
+            //$('#removeTrain').modal();
+            //If user confirms...
+            if (accptDel) {
+                //Remove the closest table row.
+                // $(this).closest('tr').remove();
+                //To do: Remove train info from db.
+                // idKey = $(this).parent().attr('id');
+                // console.log(idKey);
+                // // dataRef.child(key).remove();
+                // // database.ref().child(idKey).remove();
+
+
+                //this deletes everything inside a 
+                var delAll = $(this).attr('delete-user');
+                dataRef.ref(delAll).remove();
+                location.reload();
+
+
+
+
+            }
+
+            else {
+                return;
+            }
         });
 
     </script>
